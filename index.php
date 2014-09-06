@@ -1,4 +1,7 @@
 <?php
+header('Access-Control-Allow-Origin: *');  
+header('Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type, Content-Range, Content-Disposition, Content-Description');
 if(isset($_POST['valx1'])&&isset($_POST['valx2'])&&isset($_POST['valx3']))
 {
     $json_response=array();
